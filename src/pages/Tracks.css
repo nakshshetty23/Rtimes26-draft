@@ -27,7 +27,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
+  background-image:
     linear-gradient(rgba(249, 115, 22, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(249, 115, 22, 0.03) 1px, transparent 1px);
   background-size: 50px 50px;
@@ -35,8 +35,13 @@
 }
 
 @keyframes gridFlow {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(50px, 50px); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(50px, 50px);
+  }
 }
 
 /* Glowing orb effect */
@@ -53,8 +58,15 @@
 }
 
 @keyframes float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-30px, 30px) scale(1.1); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-30px, 30px) scale(1.1);
+  }
 }
 
 .page-title {
@@ -223,13 +235,37 @@
 }
 
 /* Track Description */
-.track-description {
+/* Track Content */
+.track-content {
   padding: 24px 25px;
+  background: #ffffff;
+}
+
+.track-topics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.track-topic-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 15px;
   color: #64748b;
   font-size: 0.95rem;
-  line-height: 1.7;
-  margin: 0;
-  background: #ffffff;
+  line-height: 1.6;
+}
+
+.track-topic-item:last-child {
+  margin-bottom: 0;
+}
+
+.track-topic-item i {
+  color: #f97316;
+  font-size: 0.8rem;
+  margin-top: 6px;
+  flex-shrink: 0;
 }
 
 /* Info Note Card */
@@ -339,11 +375,34 @@
   }
 }
 
-.track-item-card:nth-child(1) { animation-delay: 0.1s; }
-.track-item-card:nth-child(2) { animation-delay: 0.15s; }
-.track-item-card:nth-child(3) { animation-delay: 0.2s; }
-.track-item-card:nth-child(4) { animation-delay: 0.25s; }
-.track-item-card:nth-child(5) { animation-delay: 0.3s; }
-.track-item-card:nth-child(6) { animation-delay: 0.35s; }
-.track-item-card:nth-child(7) { animation-delay: 0.4s; }
-.track-item-card:nth-child(8) { animation-delay: 0.45s; }
+.track-item-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.track-item-card:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.track-item-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.track-item-card:nth-child(4) {
+  animation-delay: 0.25s;
+}
+
+.track-item-card:nth-child(5) {
+  animation-delay: 0.3s;
+}
+
+.track-item-card:nth-child(6) {
+  animation-delay: 0.35s;
+}
+
+.track-item-card:nth-child(7) {
+  animation-delay: 0.4s;
+}
+
+.track-item-card:nth-child(8) {
+  animation-delay: 0.45s;
+}

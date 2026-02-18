@@ -2,56 +2,7 @@ import React from 'react';
 import './InvitedSpeakers.css';
 
 const InvitedSpeakers = () => {
-  const invitedSpeakers = [
-    {
-      name: 'Dr. Ashok Narayanan',
-      image: '/img/ashok-narayanan1.jpg',
-      designation: 'Senior Scientist',
-      department: 'CSIR - National Aerospace Laboratories',
-      institution: 'Bangalore',
-      expertise: ['Aerospace Structures', 'Composite Materials'],
-    },
-    {
-      name: 'Dr. L M Nayak',
-      image: '/img/lm_nayak.jpg',
-      designation: 'Professor',
-      department: 'Department of Marine Engineering',
-      institution: 'Indian Maritime University',
-      expertise: ['Marine Propulsion', 'Ship Design'],
-    },
-    {
-      name: 'Dr. Manjaiah',
-      image: '/img/manjaiah.jpg',
-      designation: 'Associate Professor',
-      department: 'Department of Mechanical Engineering',
-      institution: 'Malnad College of Engineering',
-      expertise: ['Additive Manufacturing', 'Materials Processing'],
-    },
-    {
-      name: 'Dr. Ramakrishna',
-      image: '/img/ramakrishna.jpg',
-      designation: 'Professor',
-      department: 'Department of Automobile Engineering',
-      institution: 'RV College of Engineering',
-      expertise: ['Automotive Systems', 'Electric Vehicles'],
-    },
-    {
-      name: 'Dr. Anarghya',
-      image: '/img/anarghya.jpeg',
-      designation: 'Assistant Professor',
-      department: 'Department of Computer Science',
-      institution: 'NMAM Institute of Technology',
-      expertise: ['Artificial Intelligence', 'Machine Learning'],
-    },
-    {
-      name: 'Dr. Gangadharan',
-      image: '/img/gangadharan.jpeg',
-      designation: 'Professor',
-      department: 'Department of Mechanical Engineering',
-      institution: 'MIT Manipal',
-      expertise: ['Thermal Systems', 'Energy Conversion'],
-    },
-  ];
+  const invitedSpeakers = [];
 
   return (
     <div className="speakers-page">

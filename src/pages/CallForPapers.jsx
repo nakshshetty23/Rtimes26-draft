@@ -47,7 +47,7 @@ const CallForPapers = () => {
         <div className="hero-content">
           <h1>Call For <span>Papers</span></h1>
           <p>Submit your innovative research to RTIMES 2026</p>
-          <a href="mailto:rtimes26@sitmng.ac.in" className="hero-btn">
+          <a href="https://cmt3.research.microsoft.com" target="_blank" rel="noopener noreferrer" className="hero-btn">
             <i className="fas fa-paper-plane"></i>
             Submit Now
           </a>
@@ -57,7 +57,7 @@ const CallForPapers = () => {
       {/* Instructions Section */}
       <section className="cfp-section instructions-section">
         <div className="container-custom">
-          <div 
+          <div
             className="content-card"
             ref={(el) => (sectionsRef.current[0] = el)}
           >
@@ -104,8 +104,8 @@ const CallForPapers = () => {
           </div>
           <div className="format-grid">
             {paperFormat.map((item, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="format-card"
                 ref={(el) => (sectionsRef.current[1 + index] = el)}
               >
@@ -129,8 +129,8 @@ const CallForPapers = () => {
           </div>
           <div className="process-timeline">
             {submissionSteps.map((item, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="timeline-item"
                 ref={(el) => (sectionsRef.current[7 + index] = el)}
               >
@@ -151,7 +151,7 @@ const CallForPapers = () => {
       {/* Publication Section */}
       <section className="cfp-section publication-section">
         <div className="container-custom">
-          <div 
+          <div
             className="publication-card"
             ref={(el) => (sectionsRef.current[12] = el)}
           >
@@ -161,10 +161,10 @@ const CallForPapers = () => {
             <div className="publication-content">
               <h2>Publication <span>Opportunity</span></h2>
               <p>
-                Accepted and presented papers will be published in conference proceedings. 
-                Selected high-quality papers will be recommended for publication in reputed 
-                journals indexed in <strong>Scopus/Web of Science</strong>. Authors will retain 
-                the copyright of their work while granting the conference organizers the right 
+                Accepted and presented papers will be published in conference proceedings.
+                Selected high-quality papers will be recommended for publication in reputed
+                journals indexed in <strong>Scopus/Web of Science</strong>. Authors will retain
+                the copyright of their work while granting the conference organizers the right
                 to publish and distribute the papers.
               </p>
               <div className="publication-badges">
@@ -194,7 +194,7 @@ const CallForPapers = () => {
               </a>
             </div>
             <div className="cta-buttons">
-              <a href="mailto:rtimes26@sitmng.ac.in" className="btn btn-primary">
+              <a href="https://cmt3.research.microsoft.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                 <i className="fas fa-paper-plane"></i>
                 Submit Paper
               </a>

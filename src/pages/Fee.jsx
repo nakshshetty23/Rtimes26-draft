@@ -3,13 +3,7 @@ import { Link } from 'react-router-dom';
 import './Fee.css';
 
 const Fee = () => {
-  const feeData = [
-    { category: 'Research Scholars / Students', subtext: 'With valid ID proof', early: '₹ 3,000', regular: '₹ 3,500' },
-    { category: 'Academicians / Faculty', subtext: 'From educational institutions', early: '₹ 4,000', regular: '₹ 4,500' },
-    { category: 'Industry Professionals', subtext: 'Corporate / R&D organizations', early: '₹ 5,000', regular: '₹ 5,500' },
-    { category: 'Foreign Delegates', subtext: 'International participants', early: '$ 150 USD', regular: '$ 175 USD' },
-    { category: 'Accompanying Person', subtext: 'Non-presenting attendee', early: '₹ 1,500', regular: '₹ 2,000' },
-  ];
+
 
   const includes = [
     { icon: 'fas fa-chalkboard-teacher', text: 'Access to all technical sessions and keynote presentations' },
@@ -43,30 +37,53 @@ const Fee = () => {
             <table className="fee-table">
               <thead>
                 <tr>
-                  <th>Category</th>
+                  <th>Registration Category</th>
                   <th>
-                    <span className="badge-early">Early Bird</span>
-                    <span className="date-text">Before 31st March 2026</span>
+                    <span className="badge-header">Indian Participants</span>
+                    <span className="highlight-text">Early bird *</span>
+                    <span className="date-text">On or Before 15/4/2026</span>
                   </th>
                   <th>
-                    <span className="badge-regular">Regular</span>
-                    <span className="date-text">After 31st March 2026</span>
+                    <span className="badge-header">International Participants</span>
+                    <span className="highlight-text">Early bird **</span>
+                    <span className="date-text">On or Before 15/4/2026</span>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                {feeData.map((item, index) => (
-                  <tr key={index}>
-                    <td>
-                      <strong>{item.category}</strong>
-                      <span className="category-subtext">{item.subtext}</span>
-                    </td>
-                    <td className="price-early">{item.early}</td>
-                    <td className="price-regular">{item.regular}</td>
-                  </tr>
-                ))}
+                <tr>
+                  <td>Delegates(Without Paper)</td>
+                  <td>INR 2000</td>
+                  <td>USD 75</td>
+                </tr>
+                <tr>
+                  <td>Faculty Delegates</td>
+                  <td>INR 12000</td>
+                  <td>USD 135</td>
+                </tr>
+                <tr>
+                  <td>Additional paper(s)</td>
+                  <td>INR 10000</td>
+                  <td>USD 100</td>
+                </tr>
+                <tr>
+                  <td>Research Scholars</td>
+                  <td>INR 11000</td>
+                  <td>USD 125</td>
+                </tr>
+                <tr>
+                  <td>Industry Delegates</td>
+                  <td>INR 12000</td>
+                  <td>USD 135</td>
+                </tr>
               </tbody>
             </table>
+            <div className="fee-footer-note">
+              <p>* INR 500 & ** USD 5 extra after 15/04/2026</p>
+            </div>
+            <div className="fee-publication-note">
+              <p>The registered papers will be submitted for possible inclusion in SCOPUS-indexed conference proceedings. The registration amount also includes the publication charges</p>
+            </div>
           </div>
         </div>
       </section>

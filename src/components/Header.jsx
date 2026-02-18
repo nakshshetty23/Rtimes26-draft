@@ -8,12 +8,12 @@ const Header = () => {
         <div className="alert-content">
           <span className="alert-icon">📢</span>
           <span className="alert-text">
-            <strong>Abstract Submission Open!</strong> Last date: 10th January 2026
+            <strong>Abstract Submission Open!</strong> Last date: 15th February 2026
           </span>
           <a href="/call-for-papers" className="alert-btn">Submit Now</a>
         </div>
       </div>
-    </header>
+    </header >
   );
 };
 

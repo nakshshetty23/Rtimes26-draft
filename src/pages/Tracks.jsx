@@ -7,49 +7,89 @@ const Tracks = () => {
       num: 1,
       title: 'Advanced Manufacturing and Materials',
       icon: 'fas fa-cogs',
-      description: 'Cutting-edge manufacturing technologies including additive manufacturing (3D printing), CNC machining, composite materials, nanomaterials, smart materials, material characterization, surface engineering, and innovative manufacturing processes.',
+      topics: [
+        'Additive Manufacturing and 3D Printing',
+        'Smart Materials and Shape Memory Alloys',
+        'Industry 4.0, Digital Twin Technology and operations management system',
+        'Sustainable and Green Manufacturing'
+      ]
     },
     {
       num: 2,
       title: 'Aerospace and Aeronautical Innovations',
       icon: 'fas fa-plane',
-      description: 'Aircraft design and analysis, aerodynamics, propulsion systems, avionics, unmanned aerial vehicles (UAVs), space technology, satellite systems, aerospace structures, flight mechanics, and CFD applications.',
+      topics: [
+        'Next-Gen Aircraft Propulsion Systems',
+        'Hypersonic and Supersonic Technologies',
+        'UAVs and Autonomous Flight Systems',
+        'Space Exploration Technologies'
+      ]
     },
     {
       num: 3,
       title: 'Automotive Engineering and Smart Mobility',
       icon: 'fas fa-car',
-      description: 'Electric vehicles (EVs), hybrid vehicles, autonomous vehicles, vehicle dynamics, automotive safety systems, intelligent transportation systems, alternative fuels, and sustainable mobility solutions.',
+      topics: [
+        'Electric and Hybrid Vehicle Technologies',
+        'Hydrogen and Alternative Fuel Vehicles',
+        'Autonomous and Connected Vehicles',
+        'AI and IoT in Automotive Systems, sensors and Automotive safety systems'
+      ]
     },
     {
       num: 4,
       title: 'Marine and Offshore Engineering',
       icon: 'fas fa-ship',
-      description: 'Ship design and construction, marine propulsion systems, hydrodynamics, offshore structures, ocean energy harvesting, underwater robotics, marine pollution control, and naval architecture.',
+      topics: [
+        'Green Shipping and Alternative Fuels for Ships',
+        'Autonomous Ships and Maritime AI',
+        'Advanced Ship Propulsion and Hydrodynamics',
+        'Corrosion Prevention and Marine Coatings'
+      ]
     },
     {
       num: 5,
       title: 'Thermal and Fluid Sciences',
       icon: 'fas fa-fire',
-      description: 'Heat transfer, thermodynamics, fluid mechanics, combustion, refrigeration, heat exchangers, turbomachinery, HVAC systems, multiphase flow, and energy conversion systems.',
+      topics: [
+        'Advanced Heat Transfer and Cooling Techniques',
+        'Computational Fluid Dynamics (CFD) and AI Applications',
+        'Hydrogen Energy and Fuel Cell Technologies',
+        'Microfluidics and Nanofluidics'
+      ]
     },
     {
       num: 6,
       title: 'Robotics and Automation',
       icon: 'fas fa-robot',
-      description: 'Industrial robotics, collaborative robots (cobots), mechatronics, control systems, automation, robotic vision, machine learning for robotics, autonomous systems, and Industry 4.0.',
+      topics: [
+        'Humanoid Robots and AI in Robotics, Mechatronics systems',
+        'Collaborative Robots (Cobots) in Manufacturing',
+        'Soft Robotics and Bio-Inspired Mechanisms',
+        'Autonomous Systems in Defense and Aerospace'
+      ]
     },
     {
       num: 7,
       title: 'Renewable Energy and Sustainability',
-      icon: 'fas fa-solar-panel',
-      description: 'Solar energy, wind energy, biomass, biofuels, hydropower, geothermal energy, energy storage, fuel cells, sustainable engineering, and circular economy in engineering.',
+      icon: 'fas fa-leaf',
+      topics: [
+        'Solar, Wind, and Geothermal Energy Advances',
+        'Energy Harvesting and Storage Technologies',
+        'Carbon Capture and Sustainable Engineering Solutions',
+        'AI and IoT in Energy Management'
+      ]
     },
     {
       num: 8,
       title: 'Computational and AI-Driven Engineering',
-      icon: 'fas fa-brain',
-      description: 'Machine learning and deep learning applications, optimization algorithms, FEA, predictive maintenance, digital twins, data-driven design, and smart manufacturing using AI.',
+      icon: 'fas fa-microchip',
+      topics: [
+        'AI, ML, and Big Data Analytics in Mechanical Engineering',
+        'Digital Twin and Virtual Prototyping',
+        'Optimization Techniques in Mechanical Design',
+        'Quantum Computing in Mechanical Systems'
+      ]
     },
   ];
 
@@ -85,7 +125,16 @@ const Tracks = () => {
                     <h3 className="track-name">{track.title}</h3>
                   </div>
                 </div>
-                <p className="track-description">{track.description}</p>
+                <div className="track-content">
+                  <ul className="track-topics">
+                    {track.topics.map((topic, index) => (
+                      <li key={index} className="track-topic-item">
+                        <i className="fas fa-thumbtack"></i>
+                        <span>{topic}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </div>

@@ -32,13 +32,12 @@ const Home = () => {
   const stats = [
     { value: "4", label: "Departments", icon: "fas fa-building" },
     { value: "50+", label: "Expected Papers", icon: "fas fa-file-alt" },
-    { value: "10+", label: "Speakers", icon: "fas fa-microphone" },
     { value: "2", label: "Days", icon: "fas fa-calendar" }
   ];
 
   return (
     <div className="home-page">
-      
+
       {/* About SIT Section */}
       <section className="section-white animate-on-scroll">
         <div className="container-custom">
@@ -48,7 +47,7 @@ const Home = () => {
           <div className="about-content">
             <div className="about-text">
               <p className="lead-text">
-                Srinivas Institute of Technology (SIT) is a premier engineering college 
+                Srinivas Institute of Technology (SIT) is a premier engineering college
                 re-accredited by NAAC with <strong>A Grade</strong>.
               </p>
               <p>
@@ -70,9 +69,7 @@ const Home = () => {
           </h2>
           <div className="conference-intro">
             <p>
-              The 5th International Conference on Recent Trends in Mechanical Engineering Science 
-              (RTIMES-2026) aims to bring together researchers, academicians, and industry professionals 
-              to discuss innovative ideas and cutting-edge research in mechanical engineering.
+              The conference intends to have deliberations on various topics belonging to Mechanical Engineering Sciences. The theoretical topics together with real time research from various streams are expected to be presented and discussed in the conference. Deliberations of the conference shall be done but not limited to, in the following eight track themes. The conference will be conducted in hybrid mode of online and offline.
             </p>
             <div className="conference-highlights">
               <div className="highlight-item">
@@ -111,7 +108,7 @@ const Home = () => {
           </h2>
           <div className="tracks-intro-text">
             <p>
-              RTIMES-2026 invites researchers, academicians, and industry professionals to submit 
+              RTIMES-2026 invites researchers, academicians, and industry professionals to submit
               their original research work in various domains of mechanical engineering.
             </p>
           </div>
@@ -130,8 +127,9 @@ const Home = () => {
             Important <span>Dates</span>
           </h2>
           <div className="dates-container">
+            {/* Row 1 */}
             <div className="date-card">
-              <div className="date-icon"><i className="fas fa-file-upload"></i></div>
+              <div className="date-icon"><i className="fas fa-upload"></i></div>
               <div className="date-info">
                 <h4>Abstract Submission</h4>
                 <p>Last date for submission</p>
@@ -141,7 +139,80 @@ const Home = () => {
                 <span className="month">Feb 2026</span>
               </div>
             </div>
-            {/* Highlighted Date Card */}
+
+            <div className="date-card">
+              <div className="date-icon"><i className="fas fa-check-circle"></i></div>
+              <div className="date-info">
+                <h4>Abstract Acceptance</h4>
+                <p>Notification of acceptance</p>
+              </div>
+              <div className="date-value">
+                <span className="day">20</span>
+                <span className="month">Feb 2026</span>
+              </div>
+            </div>
+
+            <div className="date-card">
+              <div className="date-icon"><i className="fas fa-file-alt"></i></div>
+              <div className="date-info">
+                <h4>Full Paper</h4>
+                <p>Submission deadline</p>
+              </div>
+              <div className="date-value">
+                <span className="day">25</span>
+                <span className="month">Feb 2026</span>
+              </div>
+            </div>
+
+            <div className="date-card">
+              <div className="date-icon"><i className="fas fa-envelope-open"></i></div>
+              <div className="date-info">
+                <h4>Final Acceptance</h4>
+                <p>Notification after review</p>
+              </div>
+              <div className="date-value">
+                <span className="day">05</span>
+                <span className="month">Apr 2026</span>
+              </div>
+            </div>
+
+            {/* Row 2 */}
+            <div className="date-card">
+              <div className="date-icon"><i className="fas fa-user-clock"></i></div>
+              <div className="date-info">
+                <h4>Early Bird Reg.</h4>
+                <p>Registration closes</p>
+              </div>
+              <div className="date-value">
+                <span className="day">07</span>
+                <span className="month">Apr 2026</span>
+              </div>
+            </div>
+
+            <div className="date-card">
+              <div className="date-icon"><i className="fas fa-camera"></i></div>
+              <div className="date-info">
+                <h4>Camera Ready</h4>
+                <p>Paper submission</p>
+              </div>
+              <div className="date-value">
+                <span className="day">10</span>
+                <span className="month">Apr 2026</span>
+              </div>
+            </div>
+
+            <div className="date-card">
+              <div className="date-icon"><i className="fas fa-calendar-times"></i></div>
+              <div className="date-info">
+                <h4>Registration End</h4>
+                <p>Last date to register</p>
+              </div>
+              <div className="date-value">
+                <span className="day">15</span>
+                <span className="month">Apr 2026</span>
+              </div>
+            </div>
+
             <div className="date-card highlight">
               <div className="date-icon"><i className="fas fa-calendar-check"></i></div>
               <div className="date-info">
@@ -167,9 +238,9 @@ const Home = () => {
               <Link to="/call-for-papers" className="btn-cta-primary">
                 <i className="fas fa-paper-plane"></i> Submit Abstract
               </Link>
-              <Link to="/fee" className="btn-cta-secondary">
+              <a href="https://forms.gle/iajZeZJJqUF9yfAZ6" target="_blank" rel="noopener noreferrer" className="btn-cta-secondary">
                 <i className="fas fa-info-circle"></i> Registration Info
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -184,8 +255,8 @@ const Home = () => {
           <div className="ack-content-wrapper">
             <h3 className="ack-header-minimal">Acknowledgment</h3>
             <p className="ack-text-minimal">
-              The Microsoft CMT service was used for managing the peer-reviewing process for this conference. 
-              This service was provided for free by Microsoft and they bore all expenses, including costs 
+              The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+              This service was provided for free by Microsoft and they bore all expenses, including costs
               for Azure cloud services as well as for software development and support.
             </p>
           </div>

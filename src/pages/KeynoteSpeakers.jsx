@@ -2,29 +2,7 @@ import React from 'react';
 import './KeynoteSpeakers.css';
 
 const KeynoteSpeakers = () => {
-  const keynoteSpeakers = [
-    {
-      name: 'Dr. Shrikantha S. Rao',
-      image: '/img/Dr.Shrikantha S.Rao.jpeg',
-      designation: 'Professor',
-      department: 'Department of Mechanical Engineering',
-      institution: 'National Institute of Technology Karnataka, (NITK) Surathkal',
-    },
-    {
-      name: 'Dr. Sanjay M R',
-      image: '/img/dr. Sanjay M R.jpeg',
-      designation: 'Principal Research Scientist (Specialist 3) & Associate Professor',
-      department: 'Research Center',
-      institution: 'King Mongkut’s University of Technology, Thailand',
-    },
-    {
-      name: 'Dr. Vasu M',
-      image: '/img/Dr. Vasu M.jpeg',
-      designation: 'Assistant Professor',
-      department: 'Department of Production Engineering',
-      institution: 'National Institute of Technology, (NIT) Tiruchirappalli',
-    }
-  ];
+  const keynoteSpeakers = [];
 
   return (
     <div className="speakers-page">
@@ -42,7 +20,7 @@ const KeynoteSpeakers = () => {
       <section className="speakers-section">
         <div className="container-custom">
           <p className="intro-text">
-            We are honored to host distinguished speakers from premier national and 
+            We are honored to host distinguished speakers from premier national and
             international institutions to share their expertise at RTIMES-2026.
           </p>
 
@@ -67,7 +45,7 @@ const KeynoteSpeakers = () => {
                   <p className="speaker-designation">{speaker.designation}</p>
                   <p className="speaker-department">{speaker.department}</p>
                   <p className="speaker-institution">{speaker.institution}</p>
-                  
+
                   {/* Safety check: Only show expertise if the data exists */}
                   {speaker.expertise && (
                     <div className="speaker-expertise">
