@@ -2,7 +2,32 @@ import React from 'react';
 import './KeynoteSpeakers.css';
 
 const KeynoteSpeakers = () => {
-  const keynoteSpeakers = [];
+  const keynoteSpeakers = [
+    {
+      name: "Dr. Shrikantha S. Rao",
+      designation: "Professor",
+      department: "Mechanical Engineering",
+      institution: "National Institute of Technology Karnataka (NITK), Surathkal",
+      image: "/img/Dr.Shrikantha S.Rao.jpeg",
+      expertise: ["Mechanical Engineering", "Research", "Academic Leadership"]
+    },
+    {
+      name: "Dr. Sanjay M R",
+      designation: "Principal Research Scientist (Specialist 3) & Associate Professor",
+      department: "Mechanical Engineering",
+      institution: "King Mongkut’s University of Technology, Thailand",
+      image: "/img/Dr. Sanjay M R.jpeg",
+      expertise: ["Composite Materials", "Research", "Advanced Materials"]
+    },
+    {
+      name: "Dr. Vasu M",
+      designation: "Assistant Professor",
+      department: "Department of Production Engineering",
+      institution: "National Institute of Technology (NIT), Tiruchirappalli",
+      image: "/img/Dr. Vasu M.jpeg",
+      expertise: ["Production Engineering", "Manufacturing", "Research"]
+    }
+  ];
 
   return (
     <div className="speakers-page">
