@@ -29,8 +29,15 @@
 }
 
 @keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
 }
 
 .alert-text {
@@ -77,13 +84,30 @@ body {
   .alert-content {
     gap: 10px;
   }
-  
+
   .alert-text {
     font-size: 0.8rem;
   }
-  
+
   .alert-btn {
     padding: 4px 12px;
     font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .alert-content {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+
+  .top-alert-bar {
+    padding: 8px 10px;
+  }
+
+  .alert-btn {
+    width: 100%;
+    margin-top: 5px;
   }
 }

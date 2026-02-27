@@ -400,32 +400,51 @@
 }
 
 @media (max-width: 576px) {
+  .hero-content {
+    padding: 80px 15px 40px;
+    width: 100%;
+  }
+
   .title-main {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
   }
 
   .title-small {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     letter-spacing: 1px;
   }
 
   .countdown-timer {
     gap: 8px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .countdown-item {
-    padding: 8px 10px;
-    min-width: 60px;
+    padding: 8px 5px;
+    min-width: 55px;
   }
 
   .countdown-value {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   .countdown-separator {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: -15px;
+  }
+
+  .btn-hero-primary,
+  .btn-hero-secondary {
+    font-size: 0.85rem;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-badge span {
+    padding: 8px 15px;
+    font-size: 0.75rem;
   }
 
   .btn-hero-primary,
