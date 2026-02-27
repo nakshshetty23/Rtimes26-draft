@@ -50,13 +50,16 @@
 
 /* Speakers Grid */
 .speakers-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 
 /* Speaker Card */
 .speaker-card {
+  flex: 0 1 calc(33.333% - 20px);
+  max-width: 350px;
   background: var(--bg-white);
   border-radius: var(--radius-xl);
   overflow: hidden;
