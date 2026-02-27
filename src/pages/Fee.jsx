@@ -124,6 +124,24 @@ const Fee = () => {
         </div>
       </section>
 
+      {/* Registration QR Code Section */}
+      <section className="section-light">
+        <div className="container-custom">
+          <div className="registration-qr-section text-center" style={{ padding: "40px", background: "#fff", borderRadius: "16px", boxShadow: "0 10px 30px rgba(0,0,0,0.08)", marginTop: "40px", marginBottom: "40px" }}>
+            <h2 className="section-heading" style={{ fontSize: "1.8rem", marginBottom: "20px" }}>Conference <span>Registration</span></h2>
+            <p style={{ fontSize: "1.1rem", marginBottom: "30px", color: "#475569" }}>
+              For Conference Registration, Scan the following QR code or fill the form
+            </p>
+            <div className="qr-container" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "25px" }}>
+              <img src="/img/qr_code.png" alt="Registration QR Code" style={{ maxWidth: "250px", border: "1px solid #e2e8f0", padding: "10px", borderRadius: "8px", background: "#fff" }} />
+              <a href="https://forms.gle/cuZ5YLzeNU7mvcq26" target="_blank" rel="noopener noreferrer" className="btn-primary-custom" style={{ display: "inline-flex", padding: "12px 30px", gap: "10px" }}>
+                <i className="fas fa-external-link-alt"></i> Fill Registration Form
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Payment CTA Section */}
       <section className="section-cta-alt">
         <div className="container-custom">
