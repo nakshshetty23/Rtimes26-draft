@@ -9,7 +9,7 @@
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1050 !important;
   /* Below header bar (1100) but above content */
-  top: 45px !important;
+  top: 35px !important;
   /* Position below the alert bar */
   position: fixed !important;
 }
@@ -301,13 +301,13 @@
 
 @media (max-width: 768px) {
   .premium-navbar {
-    top: 55px !important;
+    top: 45px !important;
   }
 }
 
 @media (max-width: 576px) {
   .premium-navbar {
-    top: 115px !important;
+    top: 90px !important;
   }
 
   .brand-name {

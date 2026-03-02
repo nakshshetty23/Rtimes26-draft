@@ -9,7 +9,7 @@
   right: 0;
   z-index: 1100 !important;
   background: linear-gradient(90deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-  padding: 12px 0;
+  padding: 7px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(249, 115, 22, 0.2);
 }
@@ -23,7 +23,7 @@
 }
 
 .alert-icon {
-  font-size: 1.2rem;
+  font-size: 1rem;
   animation: pulse 2s infinite;
   filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.6));
 }
@@ -42,7 +42,7 @@
 
 .alert-text {
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 0.83rem;
   font-weight: 500;
   letter-spacing: 0.3px;
 }
@@ -55,10 +55,10 @@
 
 .alert-btn {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 5px 16px;
   background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
   color: #ffffff;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
   border-radius: var(--radius-full);
   text-transform: uppercase;
@@ -77,45 +77,45 @@
 
 /* Add space for fixed header + navbar */
 body {
-  padding-top: 45px;
+  padding-top: 35px;
 }
 
 @media (max-width: 768px) {
   body {
-    padding-top: 55px;
+    padding-top: 45px;
   }
 
   .alert-content {
-    gap: 10px;
+    gap: 8px;
   }
 
   .alert-text {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .alert-btn {
-    padding: 4px 12px;
-    font-size: 0.75rem;
+    padding: 3px 10px;
+    font-size: 0.7rem;
   }
 }
 
 @media (max-width: 576px) {
   body {
-    padding-top: 115px;
+    padding-top: 90px;
   }
 
   .alert-content {
     flex-direction: column;
-    gap: 5px;
+    gap: 4px;
     text-align: center;
   }
 
   .top-alert-bar {
-    padding: 8px 10px;
+    padding: 5px 8px;
   }
 
   .alert-btn {
     width: 100%;
-    margin-top: 5px;
+    margin-top: 4px;
   }
 }
