@@ -214,8 +214,8 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .speakers-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .speaker-card {
+    flex: 0 1 calc(50% - 15px);
   }
 }
 
@@ -233,9 +233,13 @@
   }
 
   .speakers-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speaker-card {
+    width: 100%;
     max-width: 400px;
-    margin: 0 auto;
   }
 
   .speaker-image-wrapper {
