@@ -299,7 +299,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .premium-navbar {
+    top: 55px !important;
+  }
+}
+
 @media (max-width: 576px) {
+  .premium-navbar {
+    top: 115px !important;
+  }
+
   .brand-name {
     font-size: 1.2rem;
   }
